@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Le site de Borel Nathan</title>
+    <meta name="description" content="Bienvenue sur le site personnel de Borel Nathan" />
+    <meta name="keywords" content = "site, personnel, Borel, Nathan" />
+    <link rel="icon" type="image/png" href="../ressources/borelnathan.png" />
+    <link rel="stylesheet" href="css/fichestyle1.css" id="css"/>
+    <script>
+    function StyleSwitch() { 
+    var stylesheet = document.getElementById('css');
+
+    if (stylesheet.classList.contains('on')) {
+        stylesheet.classList.remove ('on');
+        stylesheet.setAttribute('href', 'css/fichestyle1.css');
+    } else {
+        stylesheet.classList.add('on');
+        stylesheet.setAttribute('href', 'css/fichestyle2.css')
+    }}
+    </script>
+    
+</head>
+<body>
+    <header>
+
+        <h1> Bienvenue sur mon site </h1>
+        <h2> Cette page est dédier aux différents liens externes me concernant</h2>
+    </header>
+     <nav id="navMenu">
+                <ol>
+                    <li>
+                        <a class="navLink" href="PagePresentation.html">
+                            <img src="../ressources/page2.png" alt="Page contenant ma présentation personnelle"/> 
+                        </a>
+                        <p class="navText">
+                            Page contenant ma présentation personnelle
+                        </p>
+                       
+                    </li>
+                </ol>      
+        </nav>
+        <section id="LiensExternes">
+            <h3 class="titre">
+                Quelques liens qui permettent de suivre mes activités principales en ligne :
+            </h3>
+                        <p class="Presentation">
+                            Lien vers ma chaine youtube :
+                        </p>
+                <a href="https://www.youtube.com/channel/UCFJNtzoyK9-orAXkmHsvUmQ" target="_blank">
+                            <img src="../ressources/logoyoutube.png"  id="youtube" alt="youtube">
+                </a>
+                       
+                        <p class="Presentation">
+                            Lien vers mes statistiques Rainbow 6 Sige :
+                        </p>
+                <a href="https://tabstats.com/siege/player/demin/7d5e64ec-fb3b-440e-874e-8521c2e1039f" target="_blank">
+                            <img src="../ressources/logoR6.png"  id="r6tab" alt="r6tab">
+                </a>
+                        
+                        <p class="Presentation">
+                            Lien vers mon profil steam :
+                        </p>
+        
+                <a href="https://steamcommunity.com/id/DeminActor/" target="_blank" id="logosteam">
+                            <img src="../ressources/steam.png"  id="steam" alt="logosteam"> 
+                </a>
+        </section>
+           <button onclick="StyleSwitch()" class="BoutonSwitch" name="button">Changer de style</button>
+
+
+                      
+                        
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Le site de Borel Nathan</title>
+    <meta name="description" content="Bienvenue sur le site personnel de Borel Nathan" />
+    <meta name="keywords" content = "site, personnel, Borel, Nathan" />
+    <link rel="icon" type="image/png" href="../ressources/borelnathan.png" />
+    <link rel="stylesheet" href="css/fichestyle1.css" id="css"/>
+    <script>
+    function StyleSwitch() { 
+    var stylesheet = document.getElementById('css');
+
+    if (stylesheet.classList.contains('on')) {
+        stylesheet.classList.remove ('on');
+        stylesheet.setAttribute('href', 'css/fichestyle1.css');
+    } else {
+        stylesheet.classList.add('on');
+        stylesheet.setAttribute('href', 'css/fichestyle2.css')
+    }}
+    </script>
+    
+</head>
+<body>
+
+    <header>
+
+        <h1> Bienvenue sur mon site </h1>
+        <h2> Cette page est dédier a ma présentation </h2>
+    </header>
+
+        <nav id="navMenu">
+                <ol>
+                    <li>
+                        <a class="navLink" href="PageAvecLesLiens.html">
+                            <img src="../ressources/page2.png" alt="Page contenant mes liens externes"/> 
+                        </a>
+                        <p class="navText">
+                            Page contenant mes liens externes
+                        </p>
+                    </li>
+                </ol>      
+        </nav>
+    <section id="PresentationRapideEtParcours">
+        <h3 class="titre"> 
+             Présentation rapide de moi et mon parcours :
+        </h3>
+            
+            <p class="Presentation">
+            <img class="PhotoDeMoi" src="../ressources/photodemoi.png" alt="Moi en 2019" > <br/>
+            <br/>
+                Borel Nathan <br/>
+                J'ai eu 18ans le 20 septembre <br/>
+                Etudiant a l'IUT d'Aix en Provence en DUT informatique <br/>
+                J'ai obtenu mon bac S en 2020, au college et lycée je me trouvais a l'Institution Sainte Trinité <br/>
+            </p>
+
+        <h3 class="titre">   
+             Pourquoi j'ai choisis l'informatique :
+        </h3>
+            <p class="Pourquoi">
+            J'ai choisis de poursuivre des études en informatique car je suis passioné depuis le college par ce domaine,<br/>
+            j'ai eu mon premier PC en 5eme et depuis je suis totalement passioné. <br/>
+            </p>
+
+    </section>
+    <section id="Mail">
+        <h3 class="titre">
+             Laisser votre avis, cela nous interesse :
+        </h3>
+        <h1 class="noel">
+    JOYEUX NOEL 
+    </h1>
+        <div>
+            <form action="mailto:borelnathan@outlook.fr?subject=Site-Web-Avis" method="POST" enctype="text/plain" class="Input">
+                <div>
+                        <label for="Prenom" class="Input" >
+                        Prenom
+                        </label>
+                        <input type="text"  id="Prenom" class="Input" name="Prenom">
+                </div>
+                <div>
+                        <label for="Nom" class="Input">
+                        Nom
+                        </label>
+                        <input type="text"  id="Nom" class="Input" name="Nom">
+                </div>
+                <div>
+                        <label for="message" class="Input">
+                        Message
+                        </label>
+                        <textarea id="message"  cols="25" rows="5" class="Input" name="message">
+                        </textarea>
+                </div>
+                <button type="submit" class="Input">Envoyer le Mail a borelnathan@outlook</button>
+            </form>
+        </div>
+    </section>
+    
+
+
+    
+<button onclick="StyleSwitch()" class="BoutonSwitch" name="button">Changer de style</button>
+  
+
+
+ 
+
+
+</body>
+</html>
